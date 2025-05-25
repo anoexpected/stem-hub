@@ -1,0 +1,150 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Light theme colors */
+    --background: 0 0% 100%; /* #FFFFFF - White */
+    --foreground: 222 47% 11%; /* #121926 - Dark blue-gray */
+
+    --card: 0 0% 98%; /* #FAFAFA - Off white */
+    --card-foreground: 222 47% 11%; /* #121926 - Dark blue-gray */
+
+    --popover: 0 0% 98%; /* #FAFAFA - Off white */
+    --popover-foreground: 222 47% 11%; /* #121926 - Dark blue-gray */
+
+    --primary: 210 100% 50%; /* #0082FF - Electric blue */
+    --primary-foreground: 0 0% 100%; /* #FFFFFF - White */
+
+    --secondary: 160 70% 40%; /* #1DB473 - Darker mint green for better contrast */
+    --secondary-foreground: 0 0% 100%; /* #FFFFFF - White */
+
+    --tertiary: 255 100% 68%; /* #7C5CFF - Deep purple */
+    --tertiary-foreground: 0 0% 100%; /* #FFFFFF - White */
+
+    --muted: 210 20% 92%; /* #EBF0F5 - Light gray-blue */
+    --muted-foreground: 215 25% 40%; /* #6B7A90 - Medium gray-blue */
+
+    --accent: 210 40% 90%; /* #D9E6F6 - Very light blue */
+    --accent-foreground: 222 47% 11%; /* #121926 - Dark blue-gray */
+
+    --destructive: 0 84% 60%; /* #EF4444 - Red */
+    --destructive-foreground: 0 0% 100%; /* #FFFFFF - White */
+
+    --border: 214 32% 91%; /* #E5E7EB - Light gray */
+    --input: 214 32% 91%; /* #E5E7EB - Light gray */
+    --ring: 210 100% 50%; /* #0082FF - Electric blue */
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    /* Dark theme colors */
+    --background: 210 100% 10%; /* #001A2F - Rich navy blue */
+    --foreground: 0 0% 88%; /* #E0E0E0 - Light gray */
+
+    --card: 205 40% 15%; /* #182937 - Slate */
+    --card-foreground: 0 0% 88%; /* #E0E0E0 - Light gray */
+
+    --popover: 205 40% 15%; /* #182937 - Slate */
+    --popover-foreground: 0 0% 88%; /* #E0E0E0 - Light gray */
+
+    --primary: 210 100% 50%; /* #0082FF - Electric blue */
+    --primary-foreground: 0 0% 100%; /* #FFFFFF - White */
+
+    --secondary: 160 70% 60%; /* #5ADEB0 - Mint green */
+    --secondary-foreground: 0 0% 7%; /* #111111 - Near black */
+
+    --tertiary: 255 100% 68%; /* #7C5CFF - Deep purple */
+    --tertiary-foreground: 0 0% 100%; /* #FFFFFF - White */
+
+    --muted: 210 40% 20%; /* #1E3A4F - Darker slate */
+    --muted-foreground: 0 0% 70%; /* #B3B3B3 - Medium gray */
+
+    --accent: 160 70% 60%; /* #5ADEB0 - Mint green */
+    --accent-foreground: 0 0% 7%; /* #111111 - Near black */
+
+    --destructive: 0 62.8% 30.6%; /* #7F1D1D - Dark red */
+    --destructive-foreground: 0 0% 98%; /* #FAFAFA - Off white */
+
+    --border: 210 40% 25%; /* #1E3A4F - Darker slate */
+    --input: 210 40% 25%; /* #1E3A4F - Darker slate */
+    --ring: 210 100% 50%; /* #0082FF - Electric blue */
+  }
+
+  /* Chart colors */
+  :root {
+    --chart-1: var(--primary);
+    --chart-2: var(--secondary);
+    --chart-3: var(--tertiary);
+    --chart-4: 0 62.8% 30.6%;
+    --chart-5: 38 92% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-body;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-heading;
+  }
+  h1 {
+    @apply scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl;
+  }
+  h2 {
+    @apply scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0;
+  }
+  h3 {
+    @apply scroll-m-20 text-2xl font-semibold tracking-tight;
+  }
+  h4 {
+    @apply scroll-m-20 text-xl font-semibold tracking-tight;
+  }
+  p {
+    @apply leading-7 [&:not(:first-child)]:mt-6;
+  }
+  code,
+  pre {
+    @apply font-code;
+  }
+  .caption {
+    @apply text-sm text-muted-foreground;
+  }
+}
+
+/* Animation utilities */
+@layer utilities {
+  .animate-delay-100 {
+    animation-delay: 100ms;
+  }
+  .animate-delay-200 {
+    animation-delay: 200ms;
+  }
+  .animate-delay-300 {
+    animation-delay: 300ms;
+  }
+  .animate-delay-400 {
+    animation-delay: 400ms;
+  }
+  .animate-delay-500 {
+    animation-delay: 500ms;
+  }
+
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-lg hover:shadow-primary/20 hover:-translate-y-1;
+  }
+
+  .nav-link-hover {
+    @apply relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-primary after:transition-all after:duration-300 hover:after:w-full;
+  }
+}
