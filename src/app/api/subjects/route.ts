@@ -1,6 +1,9 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getSubjectsByExamBoard } from '@/lib/supabase/queries';
 
+// Force dynamic rendering for this API route
+export const dynamic = 'force-dynamic';
+
 /**
  * GET /api/subjects?exam_board_id={id}
  * Fetches all active subjects for a specific exam board

@@ -5,6 +5,9 @@ import { useRouter, useSearchParams } from 'next/navigation';
 import { supabase } from '@/lib/supabase/client';
 import { Loader2 } from 'lucide-react';
 
+// Force dynamic rendering for this page
+export const dynamic = 'force-dynamic';
+
 export default function AuthCallbackPage() {
     const router = useRouter();
     const searchParams = useSearchParams();

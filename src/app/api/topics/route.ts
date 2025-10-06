@@ -1,6 +1,9 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getTopicsBySubject } from '@/lib/supabase/queries';
 
+// Force dynamic rendering for this API route
+export const dynamic = 'force-dynamic';
+
 /**
  * GET /api/topics?subject_id={id}
  * Fetches all active topics for a specific subject

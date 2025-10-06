@@ -6,6 +6,9 @@ import { useRouter, useSearchParams } from 'next/navigation';
 import { supabase } from '@/lib/supabase/client';
 import { Loader2 } from 'lucide-react';
 
+// Force dynamic rendering for this page
+export const dynamic = 'force-dynamic';
+
 // We perform email/password login on the client to ensure PKCE/session cookies
 // are written in the browser, avoiding redirects back to the login page.
 

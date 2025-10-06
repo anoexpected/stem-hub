@@ -2,6 +2,9 @@ import { NextRequest, NextResponse } from 'next/server';
 import { requireRole } from '@/middleware/requireRole';
 import { createClient } from '@/lib/supabase/server';
 
+// Force dynamic rendering for this API route
+export const dynamic = 'force-dynamic';
+
 /**
  * GET /api/contribute/topics
  * Fetches topics available for contribution (contributor view only)
