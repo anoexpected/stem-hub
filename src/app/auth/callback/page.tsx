@@ -1,14 +1,11 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useState, Suspense } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { supabase } from '@/lib/supabase/client';
 import { Loader2 } from 'lucide-react';
 
-// Force dynamic rendering for this page
-export const dynamic = 'force-dynamic';
-
-export default function AuthCallbackPage() {
+function AuthCallbackContent() {
     const router = useRouter();
     const searchParams = useSearchParams();
     const [error, setError] = useState<string | null>(null);
@@ -328,5 +325,20 @@ export default function AuthCallbackPage() {
                 </p>
             </div>
         </div>
+    );
+}
+
+export default function AuthCallbackPage() {
+    return (
+        <Suspense fallback={
+            <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-[#1B2A4C] to-[#2C3E50]">
+                <div className="text-center">
+                    <Loader2 className="w-12 h-12 animate-spin text-white mx-auto mb-4" />
+                    <p className="text-white text-lg">Loading...</p>
+                </div>
+            </div>
+        }>
+            <AuthCallbackContent />
+        </Suspense>
     );
 }

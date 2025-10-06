@@ -27,7 +27,6 @@ yarn-error.log*
 
 # local env files
 .env*.local
-.env
 
 # vercel
 .vercel
@@ -116,3 +115,4 @@ public/clear-*.html
 *-backup.*
 page-old-backup.*
 README.old.md
+config.bat
