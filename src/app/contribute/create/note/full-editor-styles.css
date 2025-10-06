@@ -1,0 +1,333 @@
+/* Full Editor - Additional Styles for Custom Extensions */
+
+/* Button Widget */
+.button-wrapper {
+    margin: 24px 0;
+    text-align: center;
+}
+
+.editor-button {
+    display: inline-block;
+    background: linear-gradient(135deg, #2ecc71, #27ae60);
+    color: white;
+    padding: 12px 32px;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(46, 204, 113, 0.2);
+}
+
+.editor-button:hover {
+    background: linear-gradient(135deg, #27ae60, #229954);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(46, 204, 113, 0.3);
+    color: white;
+}
+
+/* Poll Widget */
+.poll-widget {
+    background: #f9fafb;
+    border: 2px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 24px;
+    margin: 24px 0;
+}
+
+.poll-question {
+    font-size: 18px;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.poll-options {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.poll-option {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 16px;
+    background: white;
+    border: 2px solid #e5e7eb;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.poll-option:hover {
+    border-color: #2ecc71;
+    background: #f0fdf4;
+}
+
+.poll-option input[type="radio"] {
+    width: 18px;
+    height: 18px;
+    accent-color: #2ecc71;
+}
+
+.poll-option label {
+    flex: 1;
+    cursor: pointer;
+    font-size: 15px;
+    color: #374151;
+}
+
+/* Footnote */
+.footnote {
+    font-size: 0.75em;
+    line-height: 1;
+}
+
+.footnote-ref {
+    color: #2ecc71;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0 2px;
+}
+
+.footnote-ref:hover {
+    color: #27ae60;
+    text-decoration: underline;
+}
+
+/* Poetry Block */
+.poetry-block {
+    font-family: 'Georgia', serif;
+    font-style: italic;
+    line-height: 1.8;
+    padding: 24px;
+    margin: 24px 0;
+    background: linear-gradient(to right, #f9fafb 0%, white 20%, white 80%, #f9fafb 100%);
+    border-left: 4px solid #2ecc71;
+    white-space: pre-wrap;
+    color: #4b5563;
+}
+
+/* Financial Chart Widget */
+.financial-chart-widget {
+    background: #ffffff;
+    border: 2px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 24px;
+    margin: 24px 0;
+    text-align: center;
+}
+
+.chart-placeholder {
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #f3f4f6 0%, #e5e7eb 100%);
+    border-radius: 8px;
+    color: #6b7280;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.chart-placeholder::before {
+    content: "📈";
+    display: block;
+    font-size: 48px;
+    margin-bottom: 12px;
+}
+
+/* Video Embed */
+.video-embed {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    margin: 24px 0;
+    border-radius: 12px;
+}
+
+.video-embed iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+}
+
+/* Underline */
+.prose u,
+.ProseMirror u {
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+/* Strikethrough */
+.prose s,
+.ProseMirror s {
+    text-decoration: line-through;
+}
+
+/* Highlight */
+.prose mark,
+.ProseMirror mark {
+    background-color: #fef08a;
+    padding: 2px 4px;
+    border-radius: 2px;
+}
+
+/* Text Alignment */
+.prose [style*="text-align: center"],
+.ProseMirror [style*="text-align: center"] {
+    text-align: center;
+}
+
+.prose [style*="text-align: right"],
+.ProseMirror [style*="text-align: right"] {
+    text-align: right;
+}
+
+.prose [style*="text-align: justify"],
+.ProseMirror [style*="text-align: justify"] {
+    text-align: justify;
+}
+
+/* H1-H6 Styles */
+.prose h1,
+.ProseMirror h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    font-weight: 800;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    color: #111827;
+}
+
+.prose h4,
+.ProseMirror h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    line-height: 1.5;
+    color: #111827;
+}
+
+.prose h5,
+.ProseMirror h5 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 16px;
+    margin-bottom: 8px;
+    line-height: 1.5;
+    color: #374151;
+}
+
+.prose h6,
+.ProseMirror h6 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 12px;
+    margin-bottom: 6px;
+    line-height: 1.5;
+    color: #4b5563;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* Custom Scrollbar for Toolbar */
+.sticky::-webkit-scrollbar {
+    height: 6px;
+}
+
+.sticky::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 3px;
+}
+
+.sticky::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 3px;
+}
+
+.sticky::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .editor-button {
+        padding: 10px 24px;
+        font-size: 14px;
+    }
+
+    .poll-widget {
+        padding: 16px;
+    }
+
+    .poll-question {
+        font-size: 16px;
+    }
+
+    .poetry-block {
+        padding: 16px;
+        font-size: 16px;
+    }
+
+    .financial-chart-widget {
+        padding: 16px;
+    }
+
+    .prose h1,
+    .ProseMirror h1 {
+        font-size: 28px;
+    }
+
+    .prose h4,
+    .ProseMirror h4 {
+        font-size: 16px;
+    }
+}
+
+/* Animation for inserted elements */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.button-wrapper,
+.poll-widget,
+.financial-chart-widget,
+.poetry-block {
+    animation: slideIn 0.3s ease-out;
+}
+
+/* Focus states for accessibility */
+.poll-option:focus-within {
+    outline: 2px solid #2ecc71;
+    outline-offset: 2px;
+}
+
+.editor-button:focus {
+    outline: 2px solid #2ecc71;
+    outline-offset: 2px;
+}
+
+/* Print styles */
+@media print {
+
+    .button-wrapper,
+    .poll-widget {
+        break-inside: avoid;
+    }
+}

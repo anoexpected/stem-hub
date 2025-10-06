@@ -1,0 +1,118 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+.yarn/install-state.gz
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# local env files
+.env*.local
+.env
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.cursor/
+.codeium/
+
+# Development and documentation files (internal use only)
+ARCHITECTURE.md
+AUTH_FIXES_COMPLETE.md
+BUG_FIXES_SUMMARY.md
+CONTRIBUTOR_CREATION_FIXED.md
+CONTRIBUTOR_INVITE_FIX.md
+DASHBOARD_AUDIT_COMPLETE.md
+DASHBOARD_AUDIT_PLAN.md
+DASHBOARD_TESTING_GUIDE.md
+DATABASE_INTEGRATION_COMPLETE.md
+DATABASE_REVIEW_SUMMARY.md
+FIXES_APPLIED.md
+FOREIGN_KEY_AMBIGUITY_FIXED.md
+IMPLEMENTATION_PROGRESS.md
+IMPLEMENTATION_ROADMAP.md
+IMPLEMENTATION_SUMMARY.md
+IMPLEMENTATION_SUMMARY_DASHBOARD.md
+LOGIN_ISSUES_FIXED.md
+OAUTH_FIX_COMPLETE.md
+ONBOARDING_IMPLEMENTATION.md
+ONBOARDING_MASTERPLAN.md
+PLATFORM_ARCHITECTURE.md
+QUICK_FIX_AUTH.md
+QUICK_START_GUIDE.md
+QUICK_START_TEST.md
+README_BRANDING.md
+README_PHASE1_MVP.md
+README_PHASE2_GROWTH.md
+README_PHASE3_AI.md
+README_PHASE4_PREMIUM.md
+RLS_INFINITE_RECURSION_FIXED.md
+ROLE_MISMATCH_FIXED.md
+ROLE_ROUTING_AND_INVITATIONS.md
+RUNTIME_ERROR_FIXED.md
+START_HERE.md
+STUDENT_DASHBOARD_COMPLETE.md
+TESTING_CHECKLIST.md
+TESTING_GUIDE.md
+TOPIC_SYSTEM_SIMPLIFIED.md
+WHERE_WE_ARE.md
+ZNOTES_ACTION_CHECKLIST.md
+ZNOTES_COMPARISON.md
+
+# Local reference files (summaries created during cleanup)
+PROJECT_CLEANUP_SUMMARY.md
+READY_TO_DEPLOY.md
+
+# Development scripts
+scripts/*.ps1
+scripts/*.mjs
+scripts/*.html
+scripts/*.js
+scripts/test-*.sql
+scripts/create-test-users.sql
+scripts/recover-broken-users.sql
+
+# Documentation (keep only main docs)
+docs/MULTI_ROLE_SYSTEM_PROPOSAL.md
+docs/OAUTH_*.md
+docs/EMAIL_TEMPLATE_SETUP.md
+
+# Public debug files
+public/oauth-debug.html
+public/clear-*.html
+
+# Backup files
+*.backup
+*.old
+*-backup.*
+page-old-backup.*
+README.old.md
