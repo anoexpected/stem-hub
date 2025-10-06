@@ -77,9 +77,9 @@ export default function StudyStreak({ streak }: StudyStreakProps) {
                     ) : currentStreak < 3 ? (
                         <>🔥 Great start! Keep going to build your streak.</>
                     ) : currentStreak < 7 ? (
-                        <>💪 You're on fire! {7 - currentStreak} more days to a week.</>
+                        <>💪 You&apos;re on fire! {7 - currentStreak} more days to a week.</>
                     ) : (
-                        <>🌟 Amazing! You're crushing it with consistency!</>
+                        <>🌟 Amazing! You&apos;re crushing it with consistency!</>
                     )}
                 </p>
             </div>

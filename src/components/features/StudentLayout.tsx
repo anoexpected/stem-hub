@@ -137,7 +137,7 @@ export function StudentFooter() {
                             <span className="text-[#2ECC71]"> Hub</span>
                         </h3>
                         <p className="text-sm">
-                            Empowering Africa's next generation of innovators with quality STEM education.
+                            Empowering Africa&apos;s next generation of innovators with quality STEM education.
                         </p>
                     </div>
 
