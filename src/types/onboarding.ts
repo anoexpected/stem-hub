@@ -1,7 +1,7 @@
 // STEM Hub Onboarding Types
 // Generated: October 5, 2025
 
-import { Database } from './database';
+// import { Database } from './database'; // Commented out - not used
 
 // =====================================================
 // User Roles
